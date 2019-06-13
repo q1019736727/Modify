@@ -128,8 +128,6 @@
 				123221A0229BB67100D7D771 /* AppDelegate.m */,
 				123221A2229BB67100D7D771 /* ViewController.h */,
 				123221A3229BB67100D7D771 /* ViewController.m */,
-				123221A5229BB67100D7D771 /* Main.storyboard */,
-				123221AA229BB67300D7D771 /* LaunchScreen.storyboard */,
 			);
 			path = Modify;
 			sourceTree = "<group>";
@@ -168,6 +166,8 @@
 				123221A8229BB67300D7D771 /* Assets.xcassets */,
 				123221AD229BB67300D7D771 /* Info.plist */,
 				123221AE229BB67300D7D771 /* main.m */,
+				123221A5229BB67100D7D771 /* Main.storyboard */,
+				123221AA229BB67300D7D771 /* LaunchScreen.storyboard */,
 			);
 			path = SupportFile;
 			sourceTree = "<group>";
