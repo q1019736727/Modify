@@ -14,9 +14,11 @@ PODS:
   - AFNetworking/Serialization (3.2.1)
   - AFNetworking/UIKit (3.2.1):
     - AFNetworking/NSURLSession
+  - CommonElement (0.2.2)
   - CYLTabBarController (1.24.1):
     - CYLTabBarController/Core (= 1.24.1)
   - CYLTabBarController/Core (1.24.1)
+  - Masonry (1.1.0)
   - MJExtension (3.0.17)
   - MJRefresh (3.2.0)
   - PPNetworkHelper (0.8.1):
@@ -26,7 +28,9 @@ PODS:
   - YYCache (1.0.4)
 
 DEPENDENCIES:
+  - CommonElement
   - CYLTabBarController
+  - Masonry
   - MJExtension
   - MJRefresh
   - PPNetworkHelper
@@ -35,7 +39,9 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - AFNetworking
+    - CommonElement
     - CYLTabBarController
+    - Masonry
     - MJExtension
     - MJRefresh
     - PPNetworkHelper
@@ -44,13 +50,15 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  CommonElement: fec09913db4c3a170ff5ecafece69a383f404323
   CYLTabBarController: 46fa053a2fb165095e04792431ad91a759bb7f9f
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJExtension: 74ec83124a68891619fb7ba9c5c811bbf1691076
   MJRefresh: ed450d6eb9d3346a2cb033ab7eb6de090aeef437
   PPNetworkHelper: e893191a73665e9c496c2887fd5ceece9e930bb8
   Toast: 91b396c56ee72a5790816f40d3a94dd357abc196
   YYCache: 8105b6638f5e849296c71f331ff83891a4942952
 
-PODFILE CHECKSUM: d4ca850eea53abe684058d994015b9304be152d9
+PODFILE CHECKSUM: c6c714ad3061c7dbc56d41131ad8b2a30af4537f
 
 COCOAPODS: 1.7.2

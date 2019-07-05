@@ -7,6 +7,36 @@
 
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
+#import <CYLTabBarController/CYLTabBarController.h>
+#import <CommonElement/CommonElement.h>
+#import <Masonry/Masonry.h>
 
+#define CYApplication        [UIApplication sharedApplication]
+#define CYAppWindow          [UIApplication sharedApplication].delegate.window
+#define CYAppDelegate        ((AppDelegate*)[UIApplication sharedApplication].delegate)
+#define CYRootViewController [UIApplication sharedApplication].delegate.window.rootViewController
+#define CYUserDefaults       [NSUserDefaults standardUserDefaults]
+#define CYNotificationCenter [NSNotificationCenter defaultCenter]
+
+
+#define CYStatusBarHeight [[UIApplication sharedApplication] statusBarFrame].size.height//状态栏高度
+#define CYNavBarHeight 44.0//导航栏高度
+#define CYTopHeight (CYStatusBarHeight + CYNavBarHeight)//状态栏高度和导航栏一起的高度
+
+
+#define RGBColor(R,G,B)        [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:1.0]
+#define CYRGBColor(R,G,B)        [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:1.0]
+#define CYHEXCOLOR(hex) [UIColor colorWithHexString:hex]
+#define CYFont(font) [UIFont systemFontOfSize:font]
+
+#define CYScreenH [[UIScreen mainScreen] bounds].size.height
+#define CYScreenW [[UIScreen mainScreen] bounds].size.width
+#define CYTabBarH (CYTopHeight == 88 ? 83:49) //底部tabbar高度
+
+#define Main_Color [UIColor colorWithHexString:@"#ffca00"]
+#define MAIN_TEXT_COLOR CYHEXCOLOR(@"333333")//主要字的颜色
+#define HeadPlaceholder [UIImage imageNamed:@"ico_list"]
+//弱引用
+#define CYWeakSelf(weakSelf)  __weak __typeof(&*self)weakSelf = self;
 
 #endif /* PrefixHeader_pch */

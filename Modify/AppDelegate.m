@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import "CYTabBarControllerConfig.h"
 
 @interface AppDelegate ()
 
@@ -15,8 +16,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    NSLog(@"hello");
+    CYTabBarControllerConfig  *tabBarControllerConfig = [[CYTabBarControllerConfig alloc] init];
+    CYLTabBarController *tabBarController = tabBarControllerConfig.tabBarController;
+    [self.window setRootViewController:tabBarController];
+    self.window.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
