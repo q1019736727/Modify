@@ -1,0 +1,8 @@
+${PODS_ROOT}/Target Support Files/Pods-Modify/Pods-Modify-frameworks.sh
+${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework
+${BUILT_PRODUCTS_DIR}/CYLTabBarController/CYLTabBarController.framework
+${BUILT_PRODUCTS_DIR}/MJExtension/MJExtension.framework
+${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework
+${BUILT_PRODUCTS_DIR}/PPNetworkHelper/PPNetworkHelper.framework
+${BUILT_PRODUCTS_DIR}/Toast/Toast.framework
+${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework

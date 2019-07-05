@@ -59,6 +59,7 @@
 		123221D3229BD05F00D7D771 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		123221D4229BE9FF00D7D771 /* CYTabBarControllerConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CYTabBarControllerConfig.h; sourceTree = "<group>"; };
 		123221D5229BE9FF00D7D771 /* CYTabBarControllerConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CYTabBarControllerConfig.m; sourceTree = "<group>"; };
+		12E8AC9022CEE91A00BC5BE7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		411AD25BC24FA1FCCBF2AC21 /* Pods-Modify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Modify/Pods-Modify.debug.xcconfig"; sourceTree = "<group>"; };
 		4DF43752BE4EEA4085CCCB5D /* Pods-Modify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Modify/Pods-Modify.release.xcconfig"; sourceTree = "<group>"; };
 		6C2ACB0237EA97C5354CA8EF /* Pods-ModifyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ModifyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ModifyUITests/Pods-ModifyUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -122,10 +123,11 @@
 		1232219E229BB67100D7D771 /* Modify */ = {
 			isa = PBXGroup;
 			children = (
-				123221D2229BCF8D00D7D771 /* SupportFile */,
-				123221D1229BCF7D00D7D771 /* TabBar */,
 				1232219F229BB67100D7D771 /* AppDelegate.h */,
 				123221A0229BB67100D7D771 /* AppDelegate.m */,
+				123221D2229BCF8D00D7D771 /* SupportFile */,
+				12E8AC8F22CEE90700BC5BE7 /* MacroFile */,
+				123221D1229BCF7D00D7D771 /* TabBar */,
 				123221A2229BB67100D7D771 /* ViewController.h */,
 				123221A3229BB67100D7D771 /* ViewController.m */,
 			);
@@ -170,6 +172,14 @@
 				123221AA229BB67300D7D771 /* LaunchScreen.storyboard */,
 			);
 			path = SupportFile;
+			sourceTree = "<group>";
+		};
+		12E8AC8F22CEE90700BC5BE7 /* MacroFile */ = {
+			isa = PBXGroup;
+			children = (
+				12E8AC9022CEE91A00BC5BE7 /* PrefixHeader.pch */,
+			);
+			path = MacroFile;
 			sourceTree = "<group>";
 		};
 		49D35636DFC925F423A5323B /* Pods */ = {
@@ -383,17 +393,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Modify/Pods-Modify-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/CYLTabBarController/CYLTabBarController.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Modify/Pods-Modify-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CYLTabBarController.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Modify/Pods-Modify-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Modify/Pods-Modify-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Modify/Pods-Modify-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
