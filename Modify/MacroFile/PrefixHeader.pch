@@ -38,5 +38,10 @@
 #define HeadPlaceholder [UIImage imageNamed:@"ico_list"]
 //弱引用
 #define CYWeakSelf(weakSelf)  __weak __typeof(&*self)weakSelf = self;
-
+// ***** log *****//
+#ifdef DEBUG
+#define CYLog(...) printf("[%s] %s [第%d行]: %s\n", __TIME__ ,__PRETTY_FUNCTION__ ,__LINE__, [[NSString stringWithFormat:__VA_ARGS__] UTF8String])
+#else
+#define CYLog(...)
+#endif
 #endif /* PrefixHeader_pch */

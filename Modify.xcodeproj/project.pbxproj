@@ -18,6 +18,10 @@
 		123221D6229BE9FF00D7D771 /* CYTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 123221D5229BE9FF00D7D771 /* CYTabBarControllerConfig.m */; };
 		1256E95A22CF376500ADBF5C /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1256E95922CF376500ADBF5C /* HomeController.m */; };
 		1256E95D22CF377200ADBF5C /* ModifyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1256E95C22CF377200ADBF5C /* ModifyController.m */; };
+		12D48B5122D3268C00F343CE /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D48B5022D3268C00F343CE /* Person.m */; };
+		12D48B5422D326A600F343CE /* KVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D48B5322D326A600F343CE /* KVOController.m */; };
+		12D48B5622D3275100F343CE /* HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12D48B5522D3275100F343CE /* HomeController.xib */; };
+		12D48B5822D33B2B00F343CE /* KVOController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12D48B5722D33B2B00F343CE /* KVOController.xib */; };
 		A4F70C8B26F620484970C98D /* Pods_ModifyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D9556FD020E638F9E7A999A /* Pods_ModifyUITests.framework */; };
 		F99D365994F0F797288E8E82 /* Pods_Modify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 106AE8DF13EBF52295FA28A5 /* Pods_Modify.framework */; };
 /* End PBXBuildFile section */
@@ -62,6 +66,12 @@
 		1256E95922CF376500ADBF5C /* HomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
 		1256E95B22CF377200ADBF5C /* ModifyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModifyController.h; sourceTree = "<group>"; };
 		1256E95C22CF377200ADBF5C /* ModifyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModifyController.m; sourceTree = "<group>"; };
+		12D48B4F22D3268C00F343CE /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		12D48B5022D3268C00F343CE /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		12D48B5222D326A600F343CE /* KVOController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOController.h; sourceTree = "<group>"; };
+		12D48B5322D326A600F343CE /* KVOController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOController.m; sourceTree = "<group>"; };
+		12D48B5522D3275100F343CE /* HomeController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeController.xib; sourceTree = "<group>"; };
+		12D48B5722D33B2B00F343CE /* KVOController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KVOController.xib; sourceTree = "<group>"; };
 		12E8AC9022CEE91A00BC5BE7 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		411AD25BC24FA1FCCBF2AC21 /* Pods-Modify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Modify/Pods-Modify.debug.xcconfig"; sourceTree = "<group>"; };
 		4DF43752BE4EEA4085CCCB5D /* Pods-Modify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Modify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Modify/Pods-Modify.release.xcconfig"; sourceTree = "<group>"; };
@@ -188,8 +198,10 @@
 		1256E95622CF371500ADBF5C /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				12D48B4E22D3173C00F343CE /* KVO */,
 				1256E95822CF376500ADBF5C /* HomeController.h */,
 				1256E95922CF376500ADBF5C /* HomeController.m */,
+				12D48B5522D3275100F343CE /* HomeController.xib */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -201,6 +213,18 @@
 				1256E95C22CF377200ADBF5C /* ModifyController.m */,
 			);
 			path = Modify;
+			sourceTree = "<group>";
+		};
+		12D48B4E22D3173C00F343CE /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				12D48B4F22D3268C00F343CE /* Person.h */,
+				12D48B5022D3268C00F343CE /* Person.m */,
+				12D48B5222D326A600F343CE /* KVOController.h */,
+				12D48B5322D326A600F343CE /* KVOController.m */,
+				12D48B5722D33B2B00F343CE /* KVOController.xib */,
+			);
+			path = KVO;
 			sourceTree = "<group>";
 		};
 		12E8AC8F22CEE90700BC5BE7 /* MacroFile */ = {
@@ -340,6 +364,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12D48B5822D33B2B00F343CE /* KVOController.xib in Resources */,
+				12D48B5622D3275100F343CE /* HomeController.xib in Resources */,
 				123221AC229BB67300D7D771 /* LaunchScreen.storyboard in Resources */,
 				123221A9229BB67300D7D771 /* Assets.xcassets in Resources */,
 				123221A7229BB67100D7D771 /* Main.storyboard in Resources */,
@@ -441,8 +467,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12D48B5122D3268C00F343CE /* Person.m in Sources */,
 				1256E95D22CF377200ADBF5C /* ModifyController.m in Sources */,
 				1256E95A22CF376500ADBF5C /* HomeController.m in Sources */,
+				12D48B5422D326A600F343CE /* KVOController.m in Sources */,
 				123221AF229BB67300D7D771 /* main.m in Sources */,
 				123221A1229BB67100D7D771 /* AppDelegate.m in Sources */,
 				123221D6229BE9FF00D7D771 /* CYTabBarControllerConfig.m in Sources */,
