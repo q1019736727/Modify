@@ -18,6 +18,9 @@
 		123221D6229BE9FF00D7D771 /* CYTabBarControllerConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 123221D5229BE9FF00D7D771 /* CYTabBarControllerConfig.m */; };
 		1256E95A22CF376500ADBF5C /* HomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1256E95922CF376500ADBF5C /* HomeController.m */; };
 		1256E95D22CF377200ADBF5C /* ModifyController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1256E95C22CF377200ADBF5C /* ModifyController.m */; };
+		129C076D22D46F3800298263 /* KVCController.m in Sources */ = {isa = PBXBuildFile; fileRef = 129C076C22D46F3800298263 /* KVCController.m */; };
+		129C077022D46F5100298263 /* kvcPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 129C076F22D46F5100298263 /* kvcPerson.m */; };
+		129C077322D46F6400298263 /* kvcStudent.m in Sources */ = {isa = PBXBuildFile; fileRef = 129C077222D46F6400298263 /* kvcStudent.m */; };
 		12D48B5122D3268C00F343CE /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D48B5022D3268C00F343CE /* Person.m */; };
 		12D48B5422D326A600F343CE /* KVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12D48B5322D326A600F343CE /* KVOController.m */; };
 		12D48B5622D3275100F343CE /* HomeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12D48B5522D3275100F343CE /* HomeController.xib */; };
@@ -66,6 +69,12 @@
 		1256E95922CF376500ADBF5C /* HomeController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeController.m; sourceTree = "<group>"; };
 		1256E95B22CF377200ADBF5C /* ModifyController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModifyController.h; sourceTree = "<group>"; };
 		1256E95C22CF377200ADBF5C /* ModifyController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModifyController.m; sourceTree = "<group>"; };
+		129C076B22D46F3800298263 /* KVCController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVCController.h; sourceTree = "<group>"; };
+		129C076C22D46F3800298263 /* KVCController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVCController.m; sourceTree = "<group>"; };
+		129C076E22D46F5100298263 /* kvcPerson.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kvcPerson.h; sourceTree = "<group>"; };
+		129C076F22D46F5100298263 /* kvcPerson.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kvcPerson.m; sourceTree = "<group>"; };
+		129C077122D46F6400298263 /* kvcStudent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = kvcStudent.h; sourceTree = "<group>"; };
+		129C077222D46F6400298263 /* kvcStudent.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = kvcStudent.m; sourceTree = "<group>"; };
 		12D48B4F22D3268C00F343CE /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		12D48B5022D3268C00F343CE /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		12D48B5222D326A600F343CE /* KVOController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KVOController.h; sourceTree = "<group>"; };
@@ -199,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				12D48B4E22D3173C00F343CE /* KVO */,
+				129C076A22D46F1100298263 /* KVC */,
 				1256E95822CF376500ADBF5C /* HomeController.h */,
 				1256E95922CF376500ADBF5C /* HomeController.m */,
 				12D48B5522D3275100F343CE /* HomeController.xib */,
@@ -213,6 +223,19 @@
 				1256E95C22CF377200ADBF5C /* ModifyController.m */,
 			);
 			path = Modify;
+			sourceTree = "<group>";
+		};
+		129C076A22D46F1100298263 /* KVC */ = {
+			isa = PBXGroup;
+			children = (
+				129C076E22D46F5100298263 /* kvcPerson.h */,
+				129C076F22D46F5100298263 /* kvcPerson.m */,
+				129C077122D46F6400298263 /* kvcStudent.h */,
+				129C077222D46F6400298263 /* kvcStudent.m */,
+				129C076B22D46F3800298263 /* KVCController.h */,
+				129C076C22D46F3800298263 /* KVCController.m */,
+			);
+			path = KVC;
 			sourceTree = "<group>";
 		};
 		12D48B4E22D3173C00F343CE /* KVO */ = {
@@ -467,13 +490,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				129C077322D46F6400298263 /* kvcStudent.m in Sources */,
 				12D48B5122D3268C00F343CE /* Person.m in Sources */,
 				1256E95D22CF377200ADBF5C /* ModifyController.m in Sources */,
+				129C076D22D46F3800298263 /* KVCController.m in Sources */,
 				1256E95A22CF376500ADBF5C /* HomeController.m in Sources */,
 				12D48B5422D326A600F343CE /* KVOController.m in Sources */,
 				123221AF229BB67300D7D771 /* main.m in Sources */,
 				123221A1229BB67100D7D771 /* AppDelegate.m in Sources */,
 				123221D6229BE9FF00D7D771 /* CYTabBarControllerConfig.m in Sources */,
+				129C077022D46F5100298263 /* kvcPerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

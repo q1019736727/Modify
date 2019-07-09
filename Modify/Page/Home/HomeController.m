@@ -7,6 +7,7 @@
 
 #import "HomeController.h"
 #import "KVOController.h"
+#import "KVCController.h"
 @interface HomeController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (nonatomic, strong) NSArray * titleArray;
@@ -18,6 +19,23 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self setUpView];
+    
+    void (^block1)(void) =  ^(){
+        NSLog(@"block1");
+    };
+    
+    int age = 10;
+    void (^block2)(void) =  ^(){
+        CYLog(@"block2");
+        CYLog(@"age---------%d",age);
+    };
+    
+    void (^block3)(void) = [ ^(){
+        CYLog(@"block3");
+        CYLog(@"age---------%d",age);
+    } copy];
+    
+    CYLog(@"---->block1:%@\n---->block2:%@\n----->block3:%@",[block1 class],[block2 class],[block3 class]);
 }
 
 - (void)setUpView{
@@ -67,6 +85,13 @@
             KVOController * kvo = [[KVOController alloc]init];
             kvo.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:kvo animated:YES];
+        }
+            break;
+        case 1:
+        {
+            KVCController * kvc = [[KVCController alloc]init];
+            kvc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:kvc animated:YES];
         }
             break;
         default:
